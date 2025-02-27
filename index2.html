@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Open Link with https:// (Pornhub-Themed Joke)</title>
+  <style>
+    /* Force the HTML and body to fill the entire screen height */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Use min-height so background covers even if content is short */
+    body {
+      /* For an external background image, specify the URL directly */
+      background: #000000
+                  url("https://media-hosting.imagekit.io//82649f4bb8a24ebe/meda%20new.png?Expires=1835279343&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=GnV-sNaWJ8sOERofNumwvJ4HdEEt0HO2N6XpSaU2P2N~eZ69GomTIT1oQYP6YqU-XIP2hxUlLEmpjEj5AUKzbSqJFRU8ONH0ePzvk83oQLuJ8M-58eSEtKB8JZvzszJgPEf6EYSBlnym~22VjoN-IicnV-9sD2vWO4exnAHkWV8hosbZtqVghgkiPLoKM0b15u92470-vwFTTtFKHboi0S1Vjd8xoFyRPKUClf8tPPma8mA8Ko9NgCw9hq7Za-zTdhVgZCQNpLHseyhMD~9yzgkQdbl~XAhpnHIk4oCWX~~mAhsnLsRH6-p64XrHEnSD8OpDxaWisnKTBPEB9a8CIg__")
+                  no-repeat center center;
+      background-size: cover;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      min-height: 100%;
+      /* The next two lines prevent the iOS Safari top/bottom bar from messing the full height on some devices */
+      min-height: 100vh;
+      -webkit-background-size: cover;
+    }
+
+    h1 {
+      margin-top: 50px;
+      margin-bottom: 20px;
+      color: #FF9900; /* Pornhub Orange */
+    }
+
+    form {
+      display: inline-block;
+      margin-top: 20px;
+      text-align: center;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 250px;
+      border: 2px solid #FF9900;
+      border-radius: 4px;
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    button {
+      margin-left: 10px; /* Extra margin on the left side of the button */
+      padding: 10px 20px;
+      background-color: #FF9900;
+      color: #ffffff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+
+    button:hover {
+      background-color: #e68a00;
+    }
+
+    /* Make sure the page is readable on smaller devices */
+    @media (max-width: 600px) {
+      input[type="text"] {
+        width: 80%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Euuuu Euuu Euuu Meda..!!</h1>
+  <form id="myForm" onsubmit="return openLink();">
+    <input type="text" id="searchInput" placeholder="Link Ida dengu" required>
+    <br><br>
+    <button type="Submit">Click Pannu</button>
+  </form>
+
+  <script>
+    function openLink() {
+      var inputValue = document.getElementById("searchInput").value.trim();
+      // Construct the final URL
+      var finalURL = "https://terabox-api.mrspyboy.workers.dev/" + inputValue;
+      // Open in a new tab
+      window.open(finalURL, "_blank");
+      return false; // Prevent form submission reload
+    }
+  </script>
+</body>
+</html>
